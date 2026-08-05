@@ -2,17 +2,12 @@
     padding: 0;
     margin: 0;
 }
-/* header{
-    
-}
-input{
-    position: inherit;
-    } */
-    
+
 body{
     background-color: black;
 }
-    h1{
+
+h1{
     text-align: center;
     color: white;
 }
@@ -44,7 +39,7 @@ h2{
    
 }
 
-#roupas{
+.roupas{
     border: 2px solid white;
     height: 200px;
     width: 150px;
@@ -56,7 +51,7 @@ h2{
     height: 130px;
 }
 
-#roupas:hover{ /* hover serve para animar o card */
+.roupas:hover{ /* hover serve para animar o card */
     cursor: pointer; /* mouse com a mãozinha */
     transform: scale(1.1); /*Da movimento na foto */
     transition: 0.8s; /* movimento lento/rápido */
@@ -66,17 +61,17 @@ h2{
     font-size: small;
 }
 
-#desconto{
+.desconto{
     background-color: green;
     width: 90px;
     color:white;
 }
 
-#cartão{
+.cartao{
     font-size: x-small;
 }
 
-#frete{
+.frete{
     font-size: x-small;
     color: green;
 }
@@ -87,13 +82,6 @@ h2{
     gap: 20px;
     margin-top: 15px;
    
-}
-.tam{
-    background: white;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-weight: bold;
 }
 
 .fundo{
@@ -168,25 +156,25 @@ span{
     background-color: #e2dcdc;
     height: 550px;
 }
-#minifotos{
+.minifotos{
     height: 150px;
     width: 100px;
     margin-top: 20px;
 }
 
-#minifotos:hover{ /* hover serve para animar o card */
+.minifotos:hover{ /* hover serve para animar o card */
     cursor: pointer; /* mouse com a mãozinha */
     transform: scale(1.1); /*Da movimento na foto */
     transition: 0.8s; /* movimento lento/rápido */
 }
 
-#minifoto{
+.minifoto{
     height: 100px;
     width: 60px;
     margin-top: 3px;
     border: 2px solid #e2dcdc;
 }
-#minifoto:hover{ /* hover serve para animar o card */
+.minifoto:hover{ /* hover serve para animar o card */
     cursor: pointer; /* mouse com a mãozinha */
     transform: scale(1.3); /*Da movimento na foto */
     transition: 0.8s; /* movimento lento/rápido */
