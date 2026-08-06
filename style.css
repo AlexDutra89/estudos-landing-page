@@ -4,17 +4,45 @@
 }
 
 body{
+    background-color:black;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color:black;
+}
+header {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 0px 10px;
     background-color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombrinha bonita */
 }
 
-h1{
-    text-align: center;
+nav a {
+    margin: 0 30px;
+    text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
-h2{
+#logo1{
+    width: 400px;
+    height: 200px;
     margin: 10px;
-    color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: start;
+}
+
+input{
+    width: 500px;
+    height: 30px;
+    border: 0.5px solid white;
+    border-radius: 20px;
 }
 
 #superior{
@@ -178,6 +206,14 @@ span{
     cursor: pointer; /* mouse com a mãozinha */
     transform: scale(1.3); /*Da movimento na foto */
     transition: 0.8s; /* movimento lento/rápido */
+}
+button{
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
