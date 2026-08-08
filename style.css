@@ -1,60 +1,108 @@
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    text-transform: capitalize; /* todos os textos começam com letras maiúsculas */
+    transition: 0.2s linear;
 }
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    padding: 10px;
+}
+
+#subtitulo{
+    text-align: center;
+    color: gold;
+}
+
 
 body{
-    background-color:black;
+    background-color:#e2dcdc;
+    padding: 150px;
 }
 
-.menu{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 10px;
-    background-color:black;
-}
 header {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    padding: 0px 10px;
-    background-color: black;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombrinha bonita */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: black;
+    background-color: white;
 }
 
-nav a {
-    margin: 0 30px;
-    text-decoration: none;
-    color: white;
+.header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem; /* espaço superior */
+    padding-bottom: 1.5rem; /* espaço inferior */
+
+
+}
+
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    /* max-width: 1000px; */
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: black;
     font-weight: bold;
 }
 
+.navbar a:hover{
+    color: #007BFF; /* quando passar o mouse troca a cor para branco */
+    border-bottom: 0.1rem solid white; /* linha que vai embaixo dos nomes quando clicar */
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.icones img{
+    margin: 1rem;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.icones img:hover{
+    width: 50px;
+    height: 50px;
+
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1.5rem; /* espaço superior */
+    padding-bottom: 1.5rem; /* espaço inferior */
+    
+}
+
+.sobre{
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    
+
+}
+
 #logo1{
-    width: 400px;
+    width: 800px;
     height: 200px;
     margin: 10px;
     border: 2px solid black;
     border-radius: 15px;
-    text-align: start;
+    text-align: center;
 }
 
-input{
-    width: 500px;
-    height: 30px;
-    border: 0.5px solid white;
-    border-radius: 20px;
-}
-
-#superior{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #e2dcdc;
-    height: 300px;
-    margin: 10px;
-    border: 1px solid #e2dcdc;
-    border-radius: 22px;
-}
 
 .dados{
     display: flex;
@@ -62,6 +110,7 @@ input{
     background-color: white;
     height: 210px;
     width: 400px;
+    margin: 10px;
     border: 2px solid white;
     border-radius: 22px;
    
@@ -73,11 +122,11 @@ input{
     width: 150px;
 }
 
-.informacao{
+/* .informacao{
     color: black;
     width: 300px;
     height: 130px;
-}
+} */
 
 .roupas:hover{ /* hover serve para animar o card */
     cursor: pointer; /* mouse com a mãozinha */
@@ -116,11 +165,15 @@ input{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #e2dcdc;
-    height: 700px;
+    background-color: white;
+    height: 800px;
     margin: 10px;
-    border: 1px solid #e2dcdc;
-    border-radius: 22px;
+    border: 2px solid #e2dcdc;
+    border-radius: 20px;
+}
+
+#marca{
+    color: black;
 }
 
 h5{
@@ -142,11 +195,11 @@ h4{
 }
 
 .nova{
-    background-color: #e2dcdc;
+    background-color: white;
     height: 550px;
     margin: 10px;
     gap: 10px;
-    border: 1px solid #e2dcdc;
+    border: 1px solid white;
     border-radius: 22px;
 }
 
@@ -181,13 +234,15 @@ span{
 .fundo1{
     display: flex;
     flex-direction: column;
-    background-color: #e2dcdc;
+    background-color: white;
     height: 550px;
 }
 .minifotos{
     height: 150px;
     width: 100px;
     margin-top: 20px;
+    border: 2px solid #e2dcdc;
+    border-radius: 20px;
 }
 
 .minifotos:hover{ /* hover serve para animar o card */
@@ -208,12 +263,71 @@ span{
     transition: 0.8s; /* movimento lento/rápido */
 }
 button{
-    padding: 10px 20px;
+    padding: 10px 80px;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
+}
+
+.lateral{
+    width: 300px;
+    background-color: #007BFF;
+}
+
+.masculina{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#fotoregata{
+    width: 600px;
+    height: 600px;
+}
+
+.masculina1{
+    display: flex;
+  flex-direction: column;
+}
+#regata{
+    width: 500px;
 }
 
 
+.oi span{
+    color: gold;
+
+}
+
+.secao3{
+    background-color: white;
+    height: 600px;
+    margin: 10px;
+}
+.secao2{
+    background-color: blue;
+}
+
+.regata{
+    background-color: white;
+    height: 400px;
+    width: 600px;
+}
+
+.pedirCartao{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ada6a6;
+    margin: 10px;
+}
+#cartaoCredito{
+    height: 80px;
+    width: 80px;
+}
+.botaoPedir{
+    width: 0px;
+    height:40px ;
+}
