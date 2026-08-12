@@ -144,6 +144,14 @@ section{
     color:white;
 }
 
+.descontos{
+    background-color: rgb(74, 209, 74);;
+    width: 220px;
+    color:white;
+    font-size: 15px;
+    text-align: center;
+}
+
 .cartao{
     font-size: x-small;
 }
@@ -168,8 +176,9 @@ section{
     background-color: white;
     height: 800px;
     margin: 10px;
-    border: 2px solid #e2dcdc;
-    border-radius: 20px;
+    /* border: 2px solid #e2dcdc;
+    border-radius: 20px; */
+    border-bottom: 1px solid #ddd; /* linha para dividir as sessões */
 }
 
 #marca{
@@ -278,21 +287,25 @@ button{
 }
 
 .masculina{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1px solid #ddd;
 }
 #fotoregata{
     width: 600px;
     height: 600px;
 }
 
+
 .masculina1{
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
+    margin-left: 8px;
+    margin-bottom: 1px solid #ddd;
 }
 #regata{
-    width: 500px;
+    width: 500px;;
 }
 
 
@@ -305,29 +318,74 @@ button{
     background-color: white;
     height: 600px;
     margin: 10px;
+    
 }
 .secao2{
-    background-color: blue;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px; 
 }
 
 .regata{
     background-color: white;
-    height: 400px;
-    width: 600px;
+    padding: 20px 16px; /* 20px em cima/baixo  16px laterais */
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* espaço entre cada linha */
+    max-width: 400px;
+    margin: 10px;
+    border: 2px solid #e2dcdc;
+    border-radius: 20px;
+    
 }
 
 .pedirCartao{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #ada6a6;
-    margin: 10px;
+    background-color: rgb(240, 232, 232);
+    border-radius: 10px; 
 }
 #cartaoCredito{
+
     height: 80px;
     width: 80px;
 }
 .botaoPedir{
-    width: 0px;
-    height:40px ;
+  width: auto;       /* tira esse 0px. Deixa o botão do tamanho do texto */
+  height: 36px;      /* diminui um pouco. Antes tava 40px */
+  padding: 0 16px;   /* espaço nas laterais pra não ficar espremido */
+  background-color: #007BFF;
+  color: white;      /* letra branca */
+  font-size: 14px;   /* letra menor */
+  font-weight: bold;
+  border: none;
+  border-radius: 8px; /* borda arredondada igual do print */
+  cursor: pointer;
+}
+
+p span{
+    color: rgb(74, 209, 74);
+}
+.verde{
+    color: green;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.botaoregata{
+    padding: 5px;
+    width: 300px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
 }
