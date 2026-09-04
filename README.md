@@ -1,4 +1,4 @@
-E-commerce Landing Page - Card de Produtos
+**E-commerce Landing Page - Card de Produtos**
 
 Projeto de estudos para criar uma landing page de e-commerce focada em Moda Masculina e Feminina. 
 O objetivo é praticar HTML e CSS criando cards de produto responsivos com preço, desconto e link externo.
